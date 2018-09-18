@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<title>Women's Clothing | Northern Threads</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="Images/favicon.ico"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <a href="index.html"><img src="Images/sidelogo.png" alt="Logo" style="width:100%"></a> <!--logo on sidebar-->
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="new.html" class="w3-bar-item w3-button">New Arrivals</a>
+    <a onclick="myAccFunc(0)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Men's Clothing <i class="fa fa-caret-down"></i>
+    </a>
+    <div id=0 class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="mens.html" class="w3-bar-item w3-button">All Items</a>
+        <a href="mens.html#Suits" class="w3-bar-item w3-button">Suits</a>
+        <a href="mens.html#Blazers_Jackets" class="w3-bar-item w3-button">Blazers/Jackets</a>
+        <a href="mens.html#Pants" class="w3-bar-item w3-button">Pants</a>
+        <a href="mens.html#Shoes" class="w3-bar-item w3-button">Shoes</a>
+        <a href="mens.html#Outerwear" class="w3-bar-item w3-button">Outerwear</a>
+        <a href="mens.html#Casual_wear" class="w3-bar-item w3-button">Casual Wear</a>
+    </div>
+    <a onclick="myAccFunc(1)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+        Women's Clothing <i class="fa fa-caret-down"></i>
+    </a>
+    <div id=1 class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="womens.html" class="w3-bar-item w3-button">All Items</a>
+        <a href="womens.html#Blouses_Tops" class="w3-bar-item w3-button">Blouses/Tops</a>
+        <a href="womens.html#Blazers_Jackets" class="w3-bar-item w3-button">Blazers/Jackets</a>
+        <a href="womens.html#Dresses" class="w3-bar-item w3-button">Dresses</a>
+        <a href="womens.html#Skirts_Leggings" class="w3-bar-item w3-button">Skirts/Leggings</a>
+        <a href="womens.html#Outerwear" class="w3-bar-item w3-button">Outerwear</a>
+        <a href="womens.html#Casual_wear" class="w3-bar-item w3-button">Casual Wear</a>
+    </div>
+    <a onclick="myAccFunc(2)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+        Accessories <i class="fa fa-caret-down"></i>
+    </a>
+    <div id=2 class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="accessories.html" class="w3-bar-item w3-button">All Items</a>
+        <a href="accessories.html#Ties" class="w3-bar-item w3-button">Ties</a>
+        <a href="accessories.html#Socks" class="w3-bar-item w3-button">Socks</a>
+        <a href="accessories.html#Jewellery" class="w3-bar-item w3-button">Jewellery</a>
+        <a href="accessories.html#Wallets_Purses" class="w3-bar-item w3-button">Wallets</a>
+        <a href="accessories.html#Hats_Headwear" class="w3-bar-item w3-button">Hats/Headwear</a>
+        <a href="accessories.html#Gloves" class="w3-bar-item w3-button">Gloves</a>
+    </div>
+    <a href="sales.html" class="w3-bar-item w3-button">Sales and Promotions</a>
+  </div>
+  <a onclick="myAccFunc(3)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    About Northern Threads <i class="fa fa-caret-down"></i>
+  </a>
+  <div id=3 class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <a href="about.html#Story" class="w3-bar-item w3-button">Our Story</a>
+    <a href="about.html#Guarantee" class="w3-bar-item w3-button">Our Guarantee</a>
+    <a href="about.html#Careers" class="w3-bar-item w3-button">Careers</a>
+  </div>
+  <a onclick="myAccFunc(4)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    My Orders <i class="fa fa-caret-down"></i>
+  </a>
+  <div id=4 class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <a href="orders.html#Track" class="w3-bar-item w3-button">Track my Order</a>
+    <a href="orders.html#Shipping" class="w3-bar-item w3-button">Shipping Policy</a>
+    <a href="orders.html#Return" class="w3-bar-item w3-button">Return Policy</a>
+  </div>
+  <a onclick="myAccFunc(5)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+   Our Site <i class="fa fa-caret-down"></i>
+  </a>
+  <div id=5 class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <a href="site.html#Languages" class="w3-bar-item w3-button">Languages</a>
+    <a href="site.html#Conditions" class="w3-bar-item w3-button">Terms and Conditions</a>
+    <a href="site.html#Privacy" class="w3-bar-item w3-button">Privacy Policy</a>
+    <a href="site.html#Accessibility" class="w3-bar-item w3-button">Accessibility</a>
+  </div>
+  <a onclick="myAccFunc(6)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Help <i class="fa fa-caret-down"></i>
+  </a>
+  <div id=6 class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <a href="help.html#FAQ" class="w3-bar-item w3-button">FAQ</a>
+    <a href="help.html#Sizing" class="w3-bar-item w3-button">Sizing Charts</a>
+    <a href="help.html#Map" class="w3-bar-item w3-button">Site Map</a>
+  </div>
+  <a onclick="myAccFunc(7)" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    Contact Us <i class="fa fa-caret-down"></i>
+  </a>
+  <div id=7 class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <a href="contact.html#Locator" class="w3-bar-item w3-button">Store Locator</a>
+    <a href="contact.html#Service" class="w3-bar-item w3-button">Customer Service</a>
+    Phone: (613) 555-0145
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w2-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-padding-24 w3-wide"><img src="Images/smallscreenlogo.png" alt="Logo" style="width:50%"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-large">
+    <p class="w3-left">Businesswear for the Canadian Entrepreneur</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <h2><em>Women's Apparel</em></h2>
+  <div class="w3-container">
+    <div class="w3-container">
+      <img src="Images/heading2.jpg" alt="businesswoman" style="width:100%">
+    </div>
+  </div>
+
+  <!-- Product grid -->
+  <div id="Blouses_Tops">
+    <h3>Women's Blouses/Tops</h3>
+    <div class="w3-container w3-text-grey">
+        <p>4 items</p>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <span class="w3-tag w3-display-topleft">New</span>
+            <img src="women/blouse1.jpg" alt="white blouse with frills" style="width:85%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>White Blouse with Frills<br><b>$29.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/blouse2.jpg" alt="grey striped blouse" style="width:100%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Grey Striped Blouse<br><b>$39.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/blouse3.jpg" alt="white ruffled blouse" style="width:69%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>White Ruffled Blouse<br><b>$39.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/blouse4.jpg" alt="classic white blouse" style="width:92%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Classic White Blouse<br><b>$34.99</b></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+  <div id="Blazers_Jackets">
+    <h3>Women's Blazers/Jackets</h3>
+    <div class="w3-container w3-text-grey">
+        <p>4 items</p>
+    </div>
+    <div class="w3-row ">
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <span class="w3-tag w3-display-topleft">New</span>
+            <img src="women/blazer1.jpg" alt="classic black blazer" style="width:75%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Classic Black Blazer<br><b>$69.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/blazer2.jpg" alt="black blazer with silk lining" style="width:100%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Black Blazer with Silk Lining<br><b>$89.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/blazer3.jpg" alt="black blazer with grey lining" style="width:77%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Black Blazer with Grey Lining<br><b>$49.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/blazer4.jpg" alt="slim white blazer" style="width:80%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Slim White Blazer<br><b>$79.99</b></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+  <div id="Dresses">
+    <h3>Women's Dresses</h3>
+    <div class="w3-container w3-text-grey">
+        <p>4 items</p>
+    </div>
+    <div class="w3-row ">
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <span class="w3-tag w3-display-topleft">New</span>
+            <img src="women/dress1.jpg" alt="black pencil skirt dress" style="width:85%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Black Dress with Pencil Skirt Bottom<br><b>$49.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/dress2.jpg" alt="sleeveless black dress" style="width:97%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Sleeveless Black Dress<br><b>$49.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/dress3.jpg" alt="elegant black dress" style="width:97%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Elegant 3/4 Black Dress<br><b>$69.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img src="women/dress4.jpg" alt="sleeveless black dress" style="width:93%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Sleeveless Loose Fitting Black Dress<br><b class="w3-text-red">$39.99</b></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+  <div id="Skirts_Leggings">
+    <h3>Women's Skirts & Leggings</h3>
+    <div class="w3-container w3-text-grey">
+        <p>4 items</p>
+    </div>
+    <div class="w3-row ">
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/skirts1.jpg" alt="grey pencil skirt" style="width:95%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Grey Pencil Skirt<br><b>$49.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/skirts2.jpg" alt="dark grey pencil skirt" style="width:100%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Dark Grey Pencil Skirt<br><b>$49.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/skirts3.jpg" alt="burgundy pencil skirt" style="width:90%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Burgundy Pencil Skirt<br><b>$49.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img src="women/skirts4.jpg" alt="black leggings" style="width:92%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Black Leggings<br><b class="w3-text-red">$17.99</b></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+  <div id="Outerwear">
+    <h3>Women's Outerwear</h3>
+    <div class="w3-container w3-text-grey">
+        <p>4 items</p>
+    </div>
+    <div class="w3-row ">
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <span class="w3-tag w3-display-topleft">New</span>
+            <img src="women/jacket1.jpg" alt="grey pea coat" style="width:90%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Grey Pea Coat<br><b>$129.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/jacket2.jpg" alt="grey wool lined coat" style="width:90%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Grey Wool Lined Coat<br><b>$199.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/jacket3.jpg" alt="tan trench coat" style="width:90%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Tan Trench Coat<br><b>$139.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img src="women/jacket4.jpg" alt="beige trench coat" style="width:80%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Beige Trench Coat<br><b class="w3-text-red">$139.99</b></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+  <div id="Casual_wear">
+    <h3>Women's Casual Attire</h3>
+    <div class="w3-container w3-text-grey">
+        <p>4 items</p>
+    </div>
+    <div class="w3-row ">
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/casual1.jpg" alt="beige argyle sweater" style="width:90%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Beige Argyle Sweater<br><b>$45.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/casual2.jpg" alt="grey blouse" style="width:78%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Grey Sheer Blouse<br><b>$39.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <img src="women/casual3.jpg" alt="blue blazer" style="width:77%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Blue Blazer<br><b>$69.99</b></p>
+        </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+        <div class="w3-container">
+            <div class="w3-display-container">
+            <span class="w3-tag w3-display-topleft">Sale</span>
+            <img src="women/casual4.jpg" alt="blue blouse" style="width:80%">
+            <div class="w3-display-middle w3-display-hover">
+                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+            </div>
+            </div>
+            <p>Blue T-Shirt Blouse<br><b class="w3-text-red">$25.99</b></p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-white w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="submit.htm" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="about.html">About us</a></p>
+        <p><a href="help.html">Support</a></p>
+        <p><a href="contact.html">Find store</a></p>
+        <p><a href="orders.html">Shipment</a></p>
+        <p><a href="orders.html">Returns</a></p>
+        <p><a href="help.html">Help</a></p>
+        <p><a href="sitemap.html">Site Map</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Northern Threads</p>
+        <p><i class="fa fa-fw fa-phone"></i> (613) 555-0145</p>
+        <p><i class="fa fa-fw fa-envelope"></i> fakemail@totallynotreal.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+    <p>Northern Threads © 2017</p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc(q) {
+    var x = document.getElementById(q);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+//Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+// Click on the "Men's Clothing" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
