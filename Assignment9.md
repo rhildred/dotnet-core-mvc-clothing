@@ -1,7 +1,7 @@
 # Assignment 9
 ## .net MVC
 
-Sometimes as developers we make or are given a prototype to turn into an app. Your task is to turn the prototype at https://github.com/hexx0960/NorthernThreads/ into a .net mvc application. You will submit your app by uploading a zip to the eConestoga assignments folder provided.
+Sometimes as developers we make or are given a prototype to turn into an app. Your task is to turn the prototype at https://github.com/hexx0960/NorthernThreads/ into a .net mvc application. 
 
 You can see the .html prototype in action at https://hexx0960.github.io/NorthernThreads/. It has 13 pages which you will turn into friendly URL based routing.  For more marks you can put the clothing products on the web site into a database. Finally you can implement the buy now button and the shopping cart.
 
@@ -18,5 +18,7 @@ You can see the .html prototype in action at https://hexx0960.github.io/Northern
 |implementing a per session shopping cart|5|
 |adding items to the shopping cart with the "buy now" control|5|
 |total|100|
+
+You will submit your app by uploading a zip to the eConestoga assignments folder provided. The zip will also need to contain any required databases.
 
 
