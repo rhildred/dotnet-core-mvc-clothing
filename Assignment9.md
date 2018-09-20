@@ -9,7 +9,7 @@ You can see the .html prototype in action at https://hexx0960.github.io/Northern
 
 | Item | Out of |
 |---|---:|
-|13 pages @ 5 marks per page converted to views|65|
+|at least 12 pages @ 5 marks per page converted to views|60|
 |link to database included in project|5|
 |products table in the database with a new flag and sample data|5|
 |categories table in the database with foreign key in products and sample data|5|
@@ -17,6 +17,7 @@ You can see the .html prototype in action at https://hexx0960.github.io/Northern
 |data from the model in views|5|
 |implementing a per session shopping cart|5|
 |adding items to the shopping cart with the "buy now" control|5|
+|spelling and grammar|5|
 |total|100|
 
 You will submit your app by uploading a zip to the eConestoga assignments folder provided. The zip will also need to contain any required databases.
