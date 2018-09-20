@@ -8,15 +8,15 @@ You can see the .html prototype in action at https://hexx0960.github.io/Northern
 ## Marking
 
 | Item | Out of |
-| --- | --- | --- |
-| 13 pages @ 5 marks per page converted to views | 65 |
-| link to database included in project | 5 |
-| products table in the database with a new flag and sample data | 5 |
-| categories table in the database with foreign key in products and sample data | 5 |
-| database data integrated with your model | 5 |
-| data from the model in views | 5 |
-| implementing a per session shopping cart | 5 |
-| adding items to the shopping cart with the "buy now" control | 5 |
-| total | 100 |
+|---|---:|
+|13 pages @ 5 marks per page converted to views|65|
+|link to database included in project|5|
+|products table in the database with a new flag and sample data|5|
+|categories table in the database with foreign key in products and sample data|5|
+|database data integrated with your model|5|
+|data from the model in views|5|
+|implementing a per session shopping cart|5|
+|adding items to the shopping cart with the "buy now" control|5|
+|total|100|
 
 
