@@ -3,7 +3,7 @@
 
 Sometimes as developers we make or are given a prototype to turn into an app. Your task is to turn the prototype at https://github.com/hexx0960/NorthernThreads/ into a .net mvc application. 
 
-You can see the .html prototype in action at https://hexx0960.github.io/NorthernThreads/. It has 13 pages which you will turn into friendly URL based routing.  For more marks you can put the clothing products on the web site into a database. Finally you can implement the buy now button and the shopping cart.
+You can see the .html prototype in action at https://hexx0960.github.io/NorthernThreads/. It has 13 pages which you will turn into MVC views.  For more marks you can put the clothing products on the web site into a database. Finally you can implement the buy now button and the shopping cart.
 
 ## Marking
 
